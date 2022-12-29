@@ -1,0 +1,33 @@
+h1{
+    font-family: cursive;
+    font-size: 3em;
+    color: brown;
+  }
+  label{
+    font-size: 2em;
+    font-family: cursive;
+    color: blue;
+
+  }
+  .create{
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(92 64 23 / 87%));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+    font-size: 2em;
+    font-family: algebric;
+}
+input[type=text] ,textarea{
+    background-color: #bdbdbd;
+    color: #3088b3fc;
+    width: 10em;
+    border-radius: 25px;
+    height: 3em;
+    font-size: 2em;
+  }
+textarea{
+    width: 20em;
+    height: 8em;
+}

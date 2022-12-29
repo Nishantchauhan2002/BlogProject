@@ -1,0 +1,23 @@
+body{
+    background-image: url("./sun.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 50px;
+}
+button{
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 10em;
+    height: 3em;
+    background-color: antiquewhite;
+
+}
+
+

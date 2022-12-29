@@ -1,0 +1,19 @@
+textarea{
+    width: 30em;
+    height: 10em;
+    background-color: #bdbdbd;
+    color: #3088b3fc;
+    width: 16em;
+    border-radius: 25px;
+}
+h1{
+    font-family: cursive;
+    font-size: 3em;
+    color: brown;
+  }
+  label{
+    font-size: 2em;
+    font-family: cursive;
+    color: blue;
+
+  }

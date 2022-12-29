@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .create{
+    padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(92 64 23 / 87%));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+    font-size: 2em;
+    font-family: algebric;
+}
+p{
+    font-size: 2em;
+    font-family: cursive;
+    color: blue;
+}
+h1{
+    font-family: cursive;
+    font-size: 3em;
+    color: brown;
+  }
+  </style>
+</head>
+<body>
+    <center>
+        <h1>Your Comment</h1>
+        <h4>Id: <%= foundComment.id%></h4>
+        <p><strong>Username :</strong><%= foundComment.username%></p>
+        <p><strong>Comment : </strong><%=foundComment.comment %></p>
+        <button class="create"><a href="/comment">Go back</a></button>
+    </center>
+</body>
+</html>

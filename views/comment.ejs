@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./comment.css">
+    <style>
+        /* table, th, td {
+  border: 2px solid black;
+  padding: 10px;
+  
+  margin: 30px;
+}
+table {
+background-image: url(./sun.jpg);
+} */
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Blogs</h1>
+      
+    
+   <table>
+    <th>Author</th> <th>Comment</th> <th>Wish</th>
+    <% for(let item of comments){ %>
+    <tr>
+        <td><%=item.username %></td>
+        <td><%=item.comment %></td>
+        <td>
+            <a href="./show/<%=item.id%>"><button>Show</button></a>
+            <a href="./edit/<%=item.id%>"><button>Edit</button></a> 
+            <form action="/comment/<%=item.id%>?_method=Delete" method="POST">
+                <button type="submit">Delete</button>
+            </form>
+               </td>
+
+    </tr>
+    <% } %>
+   </table>
+   <br>
+   <a href="./newcomments"><button class="create">Want to add new comments</button></a>
+   <a href="./"><button class="create">Back to home</button></a>
+</center>
+</body>
+</html>

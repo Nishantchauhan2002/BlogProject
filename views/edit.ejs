@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .create{
+            padding: 10px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgb(92 64 23 / 87%));
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+    font-size: 2em;
+    font-family: algebric;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="color: brown;font-size: 3em;font-family: cursive;">Editing</h1>
+    <form action="/edit/<%=foundComment.id%>?_method=PATCH" method ="POST">
+        
+        <label for="comment" style="color: blue;
+        font-size: 2em;
+        font-family: cursive;">Comment : </label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="3" style="width: 30em;
+        height: 10em;
+        background-color: #bdbdbd;
+        color: #3088b3fc;
+        width: 16em;
+        border-radius: 25px;font-size: 2em;
+    "><%=foundComment.comment %></textarea>
+        <br><br>
+        <button type="submit" class="create">Save</button>
+    </form>
+</center>
+</body>
+</html>
