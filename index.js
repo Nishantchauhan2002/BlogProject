@@ -23,6 +23,11 @@ app.get('/',(req,res)=>{
 let comments = [
     {
         id:uuid(),
+        username:"Shikha Pandey",
+        comment:"You are doing great "
+    },
+    {
+        id:uuid(),
         username:"Nishant ",
         comment:"Hello from Chauhan"
     },
