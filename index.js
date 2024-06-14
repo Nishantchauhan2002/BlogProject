@@ -73,7 +73,7 @@ app.get('/show/:id',(req,res)=>{
         (c)=>c.id===(id))
         res.render('show',{foundComment})
 })
-
+//we can pass that if any url coming from edit then we can handle in a separate space
 app.get('/edit/:id',(req,res)=>{
     const {id}=req.params;
     const foundComment=comments.find(
